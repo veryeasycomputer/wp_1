@@ -1,0 +1,84 @@
+.section-iblog{
+
+	.ipost{
+		border-bottom:1px solid #e6e6e6;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+
+		.ipost-date{
+			padding-bottom: 5px;
+			text-align: center;
+			color: #555;
+			border-bottom:1px solid #e6e6e6;
+
+			.day, .month{
+				display: block;
+			}
+			.day{
+				font-size: 28px;
+			}
+			.month{
+				text-transform: uppercase;
+			}
+		}
+
+		
+		
+		.metamedia{
+			margin-bottom: 15px;
+
+			.wp-video, 
+			.wp-video .mejs-video{
+				width: 100% !important;
+			}
+		}
+
+		.ipost-text{
+			padding: 0;
+
+			.title{
+				font-size: 36px;
+				margin: 0;
+				padding: 0;
+			}		
+
+			.author-name{
+				margin: 15px 0;
+				font-size: @baseFontSize - 2;
+				text-transform: uppercase;
+				color: @gray;
+				
+				a{
+					color: @gray;
+
+					&:hover{
+						color: @pl-link; 
+					}
+				}
+			}	
+
+			.read-more{
+				display: block;
+				margin: 15px 0;
+
+				i{
+					font-size: @baseFontSize - 6;
+					height: 8px;
+					width: 8px;
+					text-align:center;
+					margin-left: 5px;
+					padding: 4px;
+					border-radius: 50px;
+					border: 2px solid @pl-link;
+				}
+			}
+		}
+	}
+	
+	@media screen and ( max-width:@resPortraitTablet ){
+		.ipost-date{
+			display: none;
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+.ishoutbox-wrap{
+	position: relative;
+	font-weight: 600;
+	margin: 15px 0;
+	padding: 15px 10px;
+	.border-radius(4px);
+	color: @baseContrast;
+	background: @pl-link;
+	
+	a{
+		color: @baseContrast;
+		border-bottom: 1px groove @baseContrast;
+
+		&:hover{
+			opacity: .8;
+		}
+	}
+		
+	.close-ishoutbox{
+		color: @baseContrast;
+		background: none;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		opacity: 1;
+		padding: 3px;
+		margin: 0;
+		.border-radius(3px);
+		border: none;
+	}
+}
